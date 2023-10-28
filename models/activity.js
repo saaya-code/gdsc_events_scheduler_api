@@ -1,4 +1,6 @@
 const mongoose = require("mongoose");
+
+
 const activitySchema = new mongoose.Schema({
     activity_type:{
         type: String,
@@ -7,7 +9,7 @@ const activitySchema = new mongoose.Schema({
     },
     date:{
         type: Date,
-        required: true
+        required: true,
     },
     details:{
         type: String
