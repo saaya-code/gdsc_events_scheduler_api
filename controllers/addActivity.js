@@ -12,7 +12,7 @@ module.exports = async (req,res)=>{
             concerned_committes,
         })
         await newActivity.save();
-        res.send(newActivity).status(200);
+        res.json(newActivity).status(200);
         webhookHandler(req.body);
     }
     catch(err){
